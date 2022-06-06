@@ -1,15 +1,15 @@
-<div class="my-5" style="text-align: center">
-    <img
-        class="img-fluid logo"
-        alt="Svelte Logo"
-        src="images/svelte_logo.png"
-    />
+<div>
+<video autoplay muted loop id="gymVideo">
+    <source src="images/video2.mp4" type="video/mp4">
+  </video>
+  
+   <div class="content">
+    <img src="images/logo_small.png" alt="logobanner" width="300px">
+    <h1>Welcome to LionCoach</h1>
+    <p>Change your body by changing your thoughts</p>
+  </div>
 </div>
 
-<h1 class="mt-3">Welcome to the Music DB Sample Application</h1>
-
 <style>
-    .logo {
-        height: 100px;
-    }
+    
 </style>

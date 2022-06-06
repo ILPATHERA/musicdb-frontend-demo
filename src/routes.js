@@ -1,24 +1,42 @@
 // Pages
 import Home from "./pages/Home.svelte";
 
-import Albums from "./pages/albums/Albums.svelte"
-import AlbumDetails from "./pages/albums/AlbumDetails.svelte"
+import Ernaehrungsbedarfe from "./pages/ernaehrungsbedarfe/Ernaehrungsbedarf.svelte"
+import ErnaehrungsbedarfDetails from "./pages/ernaehrungsbedarfe/ErnaehrungsbedarfDetails.svelte"
+import CreateBedarf from "./pages/ernaehrungsbedarfe/CreateBedarf.svelte"
 
-import Artists from "./pages/artists/Artists.svelte"
-import ArtistDetails from "./pages/artists/ArtistDetails.svelte"
-import CreateArtist from "./pages/artists/CreateArtist.svelte"
+import Mahlzeiten from "./pages/mahlzeiten/Mahlzeiten.svelte"
+import MahlzeitDetails from "./pages/mahlzeiten/MahlzeitDetails.svelte"
+import CreateMahlzeit from "./pages/mahlzeiten/CreateMahlzeit.svelte"
+
+import Kalorienrechner from "./pages/kalorienrechner/kalorienrechner.svelte"
+import Gewichte from "./pages/gewichte/Gewichte.svelte"
+import CreateGewicht from "./pages/gewichte/CreateGewicht.svelte"
+
+
 
 export default {
     // Home
     '/': Home,
     '/home': Home,
 
-    // Albums
-    '/albums': Albums,
-    '/albums/:id': AlbumDetails,
+    // Ernaehrungsbedarfe
+    '/ernaehrungsbedarfe': Ernaehrungsbedarfe,
+    '/ernaehrungsbedarfe/:id': ErnaehrungsbedarfDetails,
+    '/create-bedarf': CreateBedarf,
     
-    // Artists
-    '/artists': Artists,
-    '/artists/:id': ArtistDetails,
-    '/create-artist': CreateArtist,
+    // Mahlzeiten
+    '/mahlzeiten': Mahlzeiten,
+    '/mahlzeiten/:id': MahlzeitDetails,
+    '/create-mahlzeit': CreateMahlzeit,
+
+    //Kalorienrechner
+    '/kalorienrechner': Kalorienrechner,
+
+    //Gewichte
+    '/gewichte': Gewichte,
+    '/create-gewicht': CreateGewicht,
+
+
+    
 }
